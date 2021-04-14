@@ -16,6 +16,7 @@ function appendContent (lang) {
 
     function appendAboutText(data) {
         var aboutContainer = document.getElementById("about-body");
+        aboutContainer.innerHTML = "";
         for (var i = 0; i < data.length; i++) {
             var p = document.createElement("p");
             p.innerHTML = data[i];

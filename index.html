@@ -19,7 +19,14 @@
 
 				<!-- Main -->
 					<section id="main">
-						<header>
+						<header id="header">
+							<div class="lang-links">
+								<ul>
+									<li><a href="#" onclick="appendContent('en'); return false;">en</a></li>
+									<li>/</li>
+									<li><a href="#" onclick="appendContent('es'); return false;">es</a></li>
+								</ul>
+							</div>
 							<h1>Martin Esteban Gutierrez</h1>
 							<p id="career"></p>
 						</header>
@@ -45,18 +52,6 @@
 					</footer>
 
 			</div>
-
-		<!-- Scripts -->
-			<script>
-				if ('addEventListener' in window) {
-
-					window.addEventListener('load', function() { 
-						document.body.className = document.body.className.replace(/\bis-preload\b/, ''); 
-					});
-					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
-
-				}
-			</script>
 
 	</body>
 </html>

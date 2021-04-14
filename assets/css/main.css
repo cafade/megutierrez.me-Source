@@ -921,7 +921,7 @@
 		-webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
 		-ms-transition: opacity 1s ease, -ms-transform 1s ease;
 		transition: opacity 1s ease, transform 1s ease;
-		padding: 4.5em 3em 3em 3em ;
+		padding: 1em 3em 3em 3em ;
 		background: #ffffff;
 		border-radius: 4px;
 		cursor: default;
@@ -978,6 +978,26 @@
 			transform: rotateX(15deg);
 			opacity: 0;
 		}
+
+/* Header */
+
+    #header .lang-links {
+		list-style: none;
+		display: flex;
+		justify-content: flex-end;
+	}    
+
+    #header ul li {
+		padding: 0;
+		margin: 0;
+		text-align: center;
+		display: inline-block;
+		width: inherit;
+	}
+
+	#header a {
+		border-bottom: none;
+	}
 
 /* Footer */
 
@@ -1061,6 +1081,3 @@
 		body.is-ie #wrapper {
 			height: 100%;
 		}
-
-.es, .en { display:none; } /* hide all elements with a language class */
-.es:lang(es), .en:lang(en) { display:block; } /* show those elements that match their language class */
