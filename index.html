@@ -10,6 +10,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script language="javascript" type="text/javascript" src="scripts/functions.js"></script>
 	</head>
 	<body class="is-preload"">
 
@@ -20,27 +21,11 @@
 					<section id="main">
 						<header>
 							<h1>Martin Esteban Gutierrez</h1>
-							<p>Systems Engineer</p>
+							<p id="career"></p>
 						</header>
-						<h2>ABOUT ME</h2>
+						<h2 id="about-header"></h2>
 						<hr />
-						<div class="about">
-							<p>
-							Graduate in systems engineering with strong knowledge and foundations in algorithms, data structures, object-oriented programming,
-							relational databases, networking, web development, and management of software projects.
-							</p>
-
-							<p>
-							Through self-learning and personal projects I have acquired some extra experience in Python, Golang, PHP, Excel VBA. Also have used a bit of C and C++ while experimenting with the graphical server Xorg and its library XLib. 
-							</p>
-
-							<p>
-							I got interested in Linux and programming around 2014, while playing with a live USB image of Linux Mint. Since then, I've been using Linux as my daily driver in all my devices. Did a lot distro hopping, went from Mint to Ubuntu, then Debian, Fedora, Antergos(RIP), and finally settled on Arch.
-							</p>
-
-							<p>
-							Like many beginners, in the process of debugging errors which come up while setting up a development environment, I obtained a basic understanding of tools like Git, Docker, AWS, and Google Cloud Platform.
-							</p>
+						<div id="about-body">
 						</div>
 						<hr />
 						<footer>
@@ -55,7 +40,7 @@
 					<footer id="footer">
 						<ul class="copyright">
 							<li>&copy; Martin E. Gutierrez</li>
-							<li><a href="https://html5up.net/license">license</a></li>
+							<li><a href="https://html5up.net/license" id="license"></a></li>
 						</ul>
 					</footer>
 
@@ -64,10 +49,12 @@
 		<!-- Scripts -->
 			<script>
 				if ('addEventListener' in window) {
+
 					window.addEventListener('load', function() { 
 						document.body.className = document.body.className.replace(/\bis-preload\b/, ''); 
 					});
 					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+
 				}
 			</script>
 

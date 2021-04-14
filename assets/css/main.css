@@ -214,7 +214,7 @@
 		margin: 0 0 1.5em 0;
 	}
 
-	.about {
+	#about-body {
 		text-transform: none;
 		text-align: left;
 	}
@@ -1061,3 +1061,6 @@
 		body.is-ie #wrapper {
 			height: 100%;
 		}
+
+.es, .en { display:none; } /* hide all elements with a language class */
+.es:lang(es), .en:lang(en) { display:block; } /* show those elements that match their language class */
