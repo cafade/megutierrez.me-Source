@@ -25,10 +25,3 @@ function appendContent (lang) {
     }
 
 } 
-
-var userLanguage = (navigator.language || navigator.userLanguage).split("-")[0];
-if (userLanguage == "es") {
-    appendContent(userLanguage)
-} else {
-    appendContent("en")
-}

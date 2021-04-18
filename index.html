@@ -59,6 +59,13 @@
 			<script>
 			if ('addEventListener' in window) {
 
+                var userLanguage = (navigator.language || navigator.userLanguage).split("-")[0];
+                if (userLanguage == "es") {
+                    appendContent(userLanguage)
+                } else {
+                    appendContent("en")
+                }
+
 				window.addEventListener('load', function() { 
 					document.body.className = document.body.className.replace(/\bis-preload\b/, ''); 
 				});
