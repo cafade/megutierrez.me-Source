@@ -985,22 +985,53 @@
 
 /* Header */
 
-    #header .lang-links {
-		list-style: none;
+	/* Makes it so all the items inside the div with class links are displayed
+	in a single row, and divided in columns of equal width each */
+	#header .links {
 		display: flex;
-		justify-content: flex-end;
-	}    
+		flex-direction: row;
+		flex-wrap: wrap;
+		flex: 1 0 50%;
+	}
 
-    #header ul li {
+	/* Makes the right most element of a pair of divs align to the left corner */
+    #header .links .lang-links {
+		margin-left: auto;
+	}
+
+	#header .nav-links a {
+		text-transform: none;
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		-ms-appearance: none;
+		appearance: none;
+		-moz-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		-webkit-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		-ms-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		display: inline-block;
+		padding: 0 0.6em;
+		background-color: transparent;
+		border-radius: 4px;
+		border: solid 1px #c8cccf;
+		color: #414f57 !important;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+		white-space: nowrap;
+	}
+
+	#header .nav-links a:hover {
+		color: #ff7496 !important;
+	}
+
+    /* Group all elements of the list to be displayed in a single row */
+    #header .links ul li {
 		padding: 0;
 		margin: 0;
 		text-align: center;
 		display: inline-block;
 		width: inherit;
-	}
-
-	#header a {
-		border-bottom: none;
 	}
 
 /* Footer */
